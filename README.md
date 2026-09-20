@@ -4,7 +4,7 @@
 
 > **Trace the clues. Uncover the truth.**
 
-Cyphora is an interactive digital crime investigation platform built with Java Spring Boot and MongoDB.
+Cyphora is an interactive digital crime investigation platform built with **Java Spring Boot and MongoDB**.
 
 It allows investigators to explore cyber-crime cases, analyze digital evidence, examine suspects, and identify the person responsible for an incident.
 
@@ -35,7 +35,7 @@ Investigate a suspicious login in a computer lab and uncover unauthorized access
 
 ### Case 002 — The Vanished Device
 
-Investigate a missing laptop using network traces, device information and file activity.
+Investigate a missing laptop using network traces, device information, and file activity.
 
 ### Case 003 — Identity Unknown
 
@@ -46,6 +46,7 @@ Investigate a compromised account and trace the suspicious session back to its s
 ## 🛠️ Technologies Used
 
 ### Backend
+
 - Java
 - Spring Boot
 - Spring Web
@@ -53,14 +54,17 @@ Investigate a compromised account and trace the suspicious session back to its s
 - Maven
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript
 
 ### Database
+
 - MongoDB
 
 ### Development Tools
+
 - Visual Studio Code
 - Git
 - GitHub
