@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyphora | Digital Crime Investigation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛡️ Cyphora
+        </div>
+
+        <nav>
+
+            <a href="#dashboard">
+                Dashboard
+            </a>
+
+            <a href="#cases">
+                Cases
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero" id="dashboard">
+
+            <div class="hero-content">
+
+                <p class="tag">
+                    DIGITAL CRIME INVESTIGATION
+                </p>
+
+                <h1>
+
+                    Trace the clues.<br>
+
+                    <span>Uncover the truth.</span>
+
+                </h1>
+
+                <p class="description">
+
+                    Cyphora is a digital investigation platform
+                    designed to analyze cyber incidents, examine
+                    digital evidence and uncover hidden connections.
+
+                </p>
+
+                <button onclick="scrollToCases()">
+
+                    Explore Cases →
+
+                </button>
+
+            </div>
+
+
+            <div class="hero-icon">
+
+                🕵️
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CASES -->
+
+        <section class="cases-section"
+                 id="cases">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="tag">
+                        INVESTIGATION DATABASE
+                    </p>
+
+                    <h2>
+                        Active Cases
+                    </h2>
+
+                </div>
+
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔎 Search cases..."
+                    onkeyup="searchCases()"
+                >
+
+            </div>
+
+
+            <div id="casesContainer"
+                 class="cases-container">
+
+                <!-- Cases loaded from Spring Boot -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section class="about"
+                 id="about">
+
+            <p class="tag">
+                ABOUT CYPHORA
+            </p>
+
+            <h2>
+                Digital Investigation Made Simple.
+            </h2>
+
+            <p>
+
+                Cyphora transforms digital investigation
+                into an interactive experience where
+                investigators analyze evidence, connect
+                clues and solve cyber-crime cases.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Cyphora |
+            Digital Crime Investigation Platform
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyphora | Evidence Room</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛡️ Cyphora
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="index.html#cases">
+                Cases
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- EVIDENCE PAGE -->
+
+    <main class="evidence-page">
+
+        <a href="index.html#cases"
+           class="back-button">
+
+            ← Back to Cases
+
+        </a>
+
+
+        <!-- HEADER -->
+
+        <section class="evidence-header">
+
+            <p class="tag">
+                DIGITAL FORENSICS
+            </p>
+
+            <h1>
+                Evidence Room
+            </h1>
+
+            <p>
+                Examine every piece of digital evidence.
+                Find the clues, connect the events and
+                identify the person responsible.
+            </p>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+
+        <section class="progress-section">
+
+            <div class="progress-info">
+
+                <span>
+                    Investigation Progress
+                </span>
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="main-progress">
+
+                <div id="mainProgressBar"
+                     class="main-progress-bar">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVIDENCE GRID -->
+
+        <section class="evidence-grid">
+
+
+            <!-- LOGIN LOGS -->
+
+            <div class="evidence-card"
+                 id="loginCard">
+
+                <div class="evidence-icon">
+                    🔐
+                </div>
+
+                <h2>
+                    Login Logs
+                </h2>
+
+                <p>
+                    Analyze suspicious login attempts,
+                    timestamps and account activity.
+                </p>
+
+                <button onclick="viewEvidence('login')">
+                    Examine Evidence →
+                </button>
+
+            </div>
+
+
+            <!-- IP ADDRESSES -->
+
+            <div class="evidence-card"
+                 id="ipCard">
+
+                <div class="evidence-icon">
+                    🌐
+                </div>
+
+                <h2>
+                    IP Addresses
+                </h2>
+
+                <p>
+                    Trace the network addresses connected
+                    to the suspicious activity.
+                </p>
+
+                <button onclick="viewEvidence('ip')">
+                    Examine Evidence →
+                </button>
+
+            </div>
+
+
+            <!-- DEVICE INFORMATION -->
+
+            <div class="evidence-card"
+                 id="deviceCard">
+
+                <div class="evidence-icon">
+                    💻
+                </div>
+
+                <h2>
+                    Device Information
+                </h2>
+
+                <p>
+                    Identify the devices involved during
+                    the incident.
+                </p>
+
+                <button onclick="viewEvidence('device')">
+                    Examine Evidence →
+                </button>
+
+            </div>
+
+
+            <!-- FILE ACCESS -->
+
+            <div class="evidence-card"
+                 id="filesCard">
+
+                <div class="evidence-icon">
+                    📁
+                </div>
+
+                <h2>
+                    File Access Logs
+                </h2>
+
+                <p>
+                    Investigate which sensitive files were
+                    opened, copied or downloaded.
+                </p>
+
+                <button onclick="viewEvidence('files')">
+                    Examine Evidence →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVIDENCE DETAILS -->
+
+        <section id="evidencePanel"
+                 class="evidence-panel">
+
+            <div class="panel-placeholder">
+
+                <div class="big-icon">
+                    🔎
+                </div>
+
+                <h2>
+                    Select an Evidence Item
+                </h2>
+
+                <p>
+                    Choose an evidence category above
+                    to begin your investigation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUSPECT BOARD -->
+        <section id="accusationResult"
+         class="accusation-result">
+</section>
+        <section class="suspect-board">
+
+            <div class="suspect-heading">
+
+                <div>
+
+                    <p class="tag">
+                        PERSONS OF INTEREST
+                    </p>
+
+                    <h2>
+                        Suspect Board
+                    </h2>
+
+                </div>
+
+                <span class="suspect-count">
+                    3 SUSPECTS
+                </span>
+
+            </div>
+
+
+            <div id="suspectsContainer"
+                 class="suspects-container">
+
+                <p class="loading-suspects">
+                    Loading suspects...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INVESTIGATOR NOTE -->
+
+        <section class="investigator-note">
+
+            <div>
+                🧠
+            </div>
+
+            <div>
+
+                <h3>
+                    Investigator's Note
+                </h3>
+
+                <p>
+                    Compare suspect information with
+                    the evidence. Look for matching
+                    devices, IP addresses and timestamps.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Cyphora |
+            Digital Crime Investigation Platform
+        </p>
+
+    </footer>
+
+
+    <script src="evidence.js"></script>
+
+</body>
+
+</html>

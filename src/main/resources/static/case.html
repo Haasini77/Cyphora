@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyphora | Investigation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛡️ Cyphora
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="index.html#cases">
+                Cases
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- INVESTIGATION -->
+
+    <main class="investigation-page">
+
+
+        <a href="index.html#cases"
+           class="back-button">
+
+            ← Back to Cases
+
+        </a>
+
+
+
+        <!-- CASE HEADER -->
+
+        <section class="case-header">
+
+            <p class="tag">
+                ACTIVE INVESTIGATION
+            </p>
+
+            <h1 id="caseTitle">
+                Loading Case...
+            </h1>
+
+            <p id="caseDescription"
+               class="case-description">
+
+                Retrieving investigation details...
+
+            </p>
+
+        </section>
+
+
+
+        <!-- INFORMATION GRID -->
+
+        <section class="investigation-grid">
+
+
+            <!-- CASE INFORMATION -->
+
+            <div class="investigation-card">
+
+                <div class="card-icon">
+                    📁
+                </div>
+
+                <h2>
+                    Case Information
+                </h2>
+
+                <p>
+                    <strong>Case ID:</strong>
+                    <span id="caseId">---</span>
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    <span id="caseLocation">---</span>
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    <span id="caseStatus">---</span>
+                </p>
+
+            </div>
+
+
+
+            <!-- SUSPECTS -->
+
+            <div class="investigation-card">
+
+                <div class="card-icon">
+                    👤
+                </div>
+
+                <h2>
+                    Suspects
+                </h2>
+
+                <p class="locked-text">
+                    🔒 Suspect information locked
+                </p>
+
+                <p class="small-text">
+
+                    Investigate the available evidence
+                    to identify the suspects.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- DIGITAL EVIDENCE -->
+
+            <div class="investigation-card">
+
+                <div class="card-icon">
+                    💻
+                </div>
+
+                <h2>
+                    Digital Evidence
+                </h2>
+
+                <p class="locked-text">
+                    🔒 Evidence room locked
+                </p>
+
+                <p class="small-text">
+
+                    System logs, IP addresses and
+                    device information will appear here.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- PROGRESS -->
+
+            <div class="investigation-card">
+
+                <div class="card-icon">
+                    🔍
+                </div>
+
+                <h2>
+                    Investigation Status
+                </h2>
+
+                <div class="progress-container">
+
+                    <div class="progress-bar">
+                    </div>
+
+                </div>
+
+                <p class="progress-text">
+
+                    Investigation Progress: 0%
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- START -->
+
+        <section class="start-investigation">
+
+            <h2>
+                Ready to investigate?
+            </h2>
+
+            <p>
+
+                Examine the evidence, connect the clues
+                and uncover the truth.
+
+            </p>
+
+            <button onclick="startInvestigation()">
+
+                Start Investigation →
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Cyphora |
+            Digital Crime Investigation Platform
+        </p>
+
+    </footer>
+
+
+    <script src="case.js"></script>
+
+</body>
+
+</html>

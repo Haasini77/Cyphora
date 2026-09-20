@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyphora | Investigation Report</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         NAVBAR
+    ========================================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛡️ Cyphora
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+
+            <a href="index.html#cases">
+                Cases
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+         RESULT PAGE
+    ========================================= -->
+
+    <main class="result-page">
+
+
+        <a href="index.html#cases"
+           class="back-button">
+
+            ← Back to Cases
+
+        </a>
+
+
+
+        <!-- ========================================
+             RESULT HEADER
+        ========================================= -->
+
+        <section class="result-header">
+
+
+            <div class="result-symbol">
+                🎯
+            </div>
+
+
+            <p class="tag">
+                INVESTIGATION COMPLETE
+            </p>
+
+
+            <h1>
+                Case Solved
+            </h1>
+
+
+            <p>
+
+                Your investigation has successfully
+                connected the evidence and identified
+                the person associated with the incident.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================
+             SCORE
+        ========================================= -->
+
+        <section class="final-score-card">
+
+
+            <div>
+
+                <p class="score-label">
+                    INVESTIGATION SCORE
+                </p>
+
+
+                <h2 id="resultScore">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="score-badge">
+                ✓ COMPLETE
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CASE SUMMARY
+        ========================================= -->
+
+        <section class="report-section">
+
+
+            <div class="report-heading">
+
+                <p class="tag">
+                    CASE SUMMARY
+                </p>
+
+
+                <h2>
+                    Investigation Details
+                </h2>
+
+            </div>
+
+
+
+            <div class="report-grid">
+
+
+                <div class="report-item">
+
+                    <span>
+                        CASE
+                    </span>
+
+
+                    <strong id="resultCase">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+
+                <div class="report-item">
+
+                    <span>
+                        LOCATION
+                    </span>
+
+
+                    <strong id="resultLocation">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+
+                <div class="report-item">
+
+                    <span>
+                        STATUS
+                    </span>
+
+
+                    <strong
+                        id="resultStatus"
+                        class="status-complete">
+
+                        Loading...
+
+                    </strong>
+
+                </div>
+
+
+
+                <div class="report-item">
+
+                    <span>
+                        CULPRIT IDENTIFIED
+                    </span>
+
+
+                    <strong id="resultSuspect">
+                        Loading...
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             EVIDENCE ANALYSIS
+        ========================================= -->
+
+        <section class="report-section">
+
+
+            <div class="report-heading">
+
+                <p class="tag">
+                    EVIDENCE ANALYSIS
+                </p>
+
+
+                <h2>
+                    Key Findings
+                </h2>
+
+            </div>
+
+
+
+            <div class="findings-list">
+
+
+                <div class="finding">
+
+                    <div class="finding-icon">
+                        🔐
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Suspicious Login
+                        </h3>
+
+
+                        <p>
+
+                            Multiple failed attempts were
+                            followed by a successful account
+                            access at
+                            <strong>02:21 AM</strong>.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="finding">
+
+                    <div class="finding-icon">
+                        🌐
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Network Evidence
+                        </h3>
+
+
+                        <p>
+
+                            IP address
+                            <strong>10.24.56.91</strong>
+                            was associated with the
+                            suspicious activity.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="finding">
+
+                    <div class="finding-icon">
+                        💻
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Device Match
+                        </h3>
+
+
+                        <p>
+
+                            Device
+                            <strong>LAB-PC-07</strong>
+                            was active at the time of the
+                            suspicious account access.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="finding">
+
+                    <div class="finding-icon">
+                        📁
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            File Access
+                        </h3>
+
+
+                        <p>
+
+                            Sensitive student records were
+                            accessed immediately after login.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CONCLUSION
+        ========================================= -->
+
+        <section class="conclusion-card">
+
+
+            <div class="conclusion-icon">
+                🧠
+            </div>
+
+
+            <p class="tag">
+                INVESTIGATOR'S CONCLUSION
+            </p>
+
+
+            <h2>
+                Evidence Successfully Connected
+            </h2>
+
+
+            <p>
+
+                The device, IP address and activity
+                timestamp formed a consistent connection
+                between the digital evidence and the
+                identified suspect.
+
+            </p>
+
+
+            <div class="conclusion-line">
+
+                Case ID:
+                <strong id="resultCaseId">
+                    Loading...
+                </strong>
+
+                &nbsp; | &nbsp;
+
+                Case Status:
+                <strong>
+                    SOLVED
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ACTION BUTTONS
+        ========================================= -->
+
+        <section class="result-actions">
+
+
+            <button
+                onclick="window.location.href='index.html'">
+
+                ← Return to Dashboard
+
+            </button>
+
+
+            <button
+                class="secondary-action"
+                onclick="window.print()">
+
+                🖨️ Print Report
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Cyphora |
+            Digital Crime Investigation Platform
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- RESULT JAVASCRIPT -->
+
+    <script src="result.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyphora | Investigator Access</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            🛡️ Cyphora
+        </div>
+
+        <nav>
+            <a href="index.html">
+                Dashboard
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main class="auth-page">
+
+        <section class="auth-card">
+
+            <div class="auth-header">
+
+                <div class="auth-icon">
+                    🕵️
+                </div>
+
+                <p class="tag">
+                    SECURE INVESTIGATOR ACCESS
+                </p>
+
+                <h1>
+                    Welcome to Cyphora
+                </h1>
+
+                <p>
+                    Create an investigator account
+                    or sign in to continue your
+                    digital investigation.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <div id="loginSection"
+                 class="auth-section">
+
+                <h2>
+                    Investigator Login
+                </h2>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Email address"
+                >
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                >
+
+                <button onclick="login()">
+                    Login →
+                </button>
+
+                <p id="loginMessage"
+                   class="auth-message">
+                </p>
+
+                <p class="auth-switch">
+
+                    Don't have an account?
+
+                    <button
+                        class="text-button"
+                        onclick="showRegister()">
+
+                        Create Account
+
+                    </button>
+
+                </p>
+
+            </div>
+
+
+            <!-- REGISTER -->
+
+            <div id="registerSection"
+                 class="auth-section"
+                 style="display: none;">
+
+                <h2>
+                    Create Investigator Account
+                </h2>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Full name"
+                >
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Email address"
+                >
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create password"
+                >
+
+                <button onclick="register()">
+                    Create Account →
+                </button>
+
+                <p id="registerMessage"
+                   class="auth-message">
+                </p>
+
+                <p class="auth-switch">
+
+                    Already have an account?
+
+                    <button
+                        class="text-button"
+                        onclick="showLogin()">
+
+                        Login
+
+                    </button>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Cyphora |
+            Digital Crime Investigation Platform
+        </p>
+
+    </footer>
+
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
